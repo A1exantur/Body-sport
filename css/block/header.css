@@ -1,0 +1,86 @@
+.header{
+    /* background-image: url("/image/trainer/hero-bg.jpg"); */
+
+    height: 750px;
+
+
+    background-image: image-set(
+    url("/image/trainer/hero-bg.jpg") 1x,
+    url("/image/trainer/hero-bg@2x.jpg") 2x
+    );
+
+    background-repeat: no-repeat; /* Не будет повторяться*/
+    background-size: cover; /*Занимает всю область выделенного обьекта*/
+    background-position: left top;
+}
+
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    font-family:var(--font-accent) ;
+    font-weight: 700;
+    letter-spacing: 3px; /* Расстояние между буквами*/
+}
+
+.header-nav a{
+    transition: color 0.2s ease-in; /*Перекрашивает слова*/
+}
+
+.header-nav a:hover{
+    color: var(--accent);
+}
+
+.header-img{
+    padding-top: 125px;
+    text-align: right;
+}
+
+@media (max-width: 800px){
+    .logo {
+        display: none;
+    }
+
+    .header-row {
+        padding-top: 15px;
+        justify-content: center;
+    }
+    .header-img {
+        text-align: center;
+    }
+}
+@media (max-width: 600px){
+
+    .header {
+        height: auto;
+        padding-bottom: 60px; 
+        background-position:center top;
+    }
+    .logo{
+        display: block;
+    }
+
+    .header-row{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .header-img{
+        display: none;
+    }
+    .header-nav {
+        flex-direction: column;
+        row-gap: 30px ;
+    }
+
+
+}

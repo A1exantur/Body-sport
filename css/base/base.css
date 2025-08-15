@@ -1,0 +1,37 @@
+:root{
+    --accent: #ffd479;
+    --font-base: 'Roboto', sans-serif;
+    --font-accent:'Bebas Neue', sans-serif;
+}
+
+
+
+body{
+    background-color: #1F2A32;
+    color: #FAFAF5;
+    font-family: var(--font-base);
+    font-weight: 300;
+
+    padding-bottom: 600px;
+}
+
+a {
+    color: #FAFAF5;
+}
+
+
+/* .title-1{
+    font-family: var(--font-accent);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 96px;
+
+} */
+
+.container{
+    max-width: 1200px; /* Фисксированная ширина, не меняется при мобиле*/
+    width: 100%; /*Нужен для мобил*/
+
+    margin: 0 auto;/* auto - центр страницы*/
+    padding: 0px 15px; /*15px при уменьшении экрана, контент не касался краев экрана, при заданном падинге, нужно увеличить max-width на 30px*/
+}
