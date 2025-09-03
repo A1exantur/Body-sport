@@ -1,8 +1,4 @@
 
-.card-group {
-
-}
-
 .card-group-img {
     margin-bottom: 25px;
     border-radius: 20px;
@@ -21,7 +17,51 @@ color: var(--accent);
 .section-groups-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 150px 32px;
+}
 
-    gap: 105px 32px;
+@media(max-width: 1200px){
+    .section-groups-grid{
+        grid-template-columns: repeat(3,1fr);
+        gap: 80px 32px;
+    }
+    .card-group-title{
+        font-size: 36px;
+    }
+}
+
+@media(max-width: 800px){
+
+    .section-groups-grid{
+        grid-template-columns: repeat(3,1fr);
+        gap: 60px 28px;
+    }
+
+    .card-group-title{
+        font-size: 28px;
+    }
 }
  
+@media(max-width: 600px){
+
+    .section-groups-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px 20px;
+    }
+}
+
+
+@media(max-width: 380px){
+
+    .section-groups-grid{
+        grid-template-columns:1fr;
+        gap: 60px 20px;
+        justify-items: center;
+    }
+
+
+    .card-group-title{
+        text-align:center;
+    }
+
+}

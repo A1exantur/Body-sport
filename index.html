@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Body </title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/image/Icons/hero-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/Icons/hero-logoIos.png">
 </head>
 <body>
 <header class="header">
@@ -33,7 +35,7 @@
     </div>
 </header>
 <main class="">
-    <section class="section section-trainers">
+    <section class="section">
         <div class="container">
             <header class="section-header">
                 <h2 class="section-title">ПЕРСОНАЛЬНЫЕ ТРЕНЕРА</h2>
@@ -108,6 +110,7 @@
             </div>
         </div>
     </section>
+
     <section class="section-beast">
         <div class="container">
             <div class="section-beast-title">РЕЖИМ ЗВЕРЯ</div>
@@ -121,17 +124,18 @@
             </div>
         </div>
     </section>
-    <section class="section section-groups">
+
+    <section class="section">
         <div class="container">
-            <header class="section-header">
-                <h2 class="section-title">ПРОГРАММЫ И СЕКЦИИ</h2>
-                <p>Разнообразные тренировки и занятия для всех уровней подготовки.<br> Найдите свою идеальную программу и начните путь к здоровью и силе.</p>
+            <header class="section-header section-header-groups">
+                <h2 class="section-title">ПРОГРАММЫ И&nbsp;СЕКЦИИ</h2>
+                <p>Разнообразные тренировки и занятия для всех уровней подготовки. Найдите свою идеальную программу и начните путь к здоровью и силе.</p>
             </header>
             <div class="section-groups-grid">
                 <a href="#!" class="card-group">
                     <img 
                     src="/image/trainer/program-01.jpg"
-                    srcset="/image/trainer/program-01@x2.jpg 2x"
+                    srcset="/image/trainer/program-01@2x.jpg 2x"
                     alt="Group" 
                     class="card-group-img">
                     <h3 class="card-group-title">
@@ -141,17 +145,17 @@
                 <a href="#!" class="card-group">
                     <img 
                     src="/image/trainer/program-02.jpg"
-                    srcset="/image/trainer/program-02@x2.jpg 2x"
+                    srcset="/image/trainer/program-02@2x.jpg 2x"
                     alt="Group" 
                     class="card-group-img">
                     <h3 class="card-group-title">
-                        тренировки
+                        тренировка
                     </h3>
                 </a>
                 <a href="#!" class="card-group">
                     <img 
                     src="/image/trainer/program-03.jpg"
-                    srcset="/image/trainer/program-03@x2.jpg 2x"
+                    srcset="/image/trainer/program-03@2x.jpg 2x"
                     alt="Group" 
                     class="card-group-img">
                     <h3 class="card-group-title">
@@ -161,7 +165,7 @@
                 <a href="#!" class="card-group">
                     <img 
                     src="/image/trainer/program-04.jpg"
-                    srcset="/image/trainer/program-04@x2.jpg 2x"
+                    srcset="/image/trainer/program-04@2x.jpg 2x"
                     alt="Group" 
                     class="card-group-img">
                     <h3 class="card-group-title">
@@ -171,7 +175,7 @@
                 <a href="#!" class="card-group">
                     <img 
                     src="/image/trainer/program-05.jpg"
-                    srcset="/image/trainer/program-05@x2.jpg 2x"
+                    srcset="/image/trainer/program-05@2x.jpg 2x"
                     alt="Group" 
                     class="card-group-img">
                     <h3 class="card-group-title">
@@ -181,7 +185,7 @@
                 <a href="#!" class="card-group">
                     <img 
                     src="/image/trainer/program-06.jpg"
-                    srcset="/image/trainer/program-06@x2.jpg 2x"
+                    srcset="/image/trainer/program-06@2x.jpg 2x"
                     alt="Group" 
                     class="card-group-img">
                     <h3 class="card-group-title">
@@ -191,7 +195,7 @@
                 <a href="#!" class="card-group">
                     <img 
                     src="/image/trainer/program-07.jpg"
-                    srcset="/image/trainer/program-07@x2.jpg 2x"
+                    srcset="/image/trainer/program-07@2x.jpg 2x"
                     alt="Group" 
                     class="card-group-img">
                     <h3 class="card-group-title">
@@ -201,7 +205,7 @@
                 <a href="#!" class="card-group">
                     <img 
                     src="/image/trainer/program-08.jpg"
-                    srcset="/image/trainer/program-08@x2.jpg 2x"
+                    srcset="/image/trainer/program-08@2x.jpg 2x"
                     alt="Group" 
                     class="card-group-img">
                     <h3 class="card-group-title">
@@ -211,6 +215,52 @@
             </div>
         </div>
     </section>
+
+    <section class="contacts">
+        <div class="container container-contact">
+            <h2 class="contacts-title">
+                НАПИСАТЬ НАМ
+            </h2>
+            <form action="" class="form">
+
+                <div class="form-group">
+                    <label for="" class="label"> Ваше имя</label>
+                    <input id="name" type="text" class="input" value="Юрий" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="label"> E-mail</label>
+                    <input id="email" type="text" class="input" value="info@mail.com" autocomplete="off">
+                </div>
+                
+                <div class="form-group">
+                    <label for="" class="label"> Сообщение </label>
+                    <textarea name="" id="message" class="textarea">Меня зовут Юрий, и я заинтересован в ваших услугах. Хотелось бы узнать больше о программах тренировок и возможностях записи. Заранее спасибо за ответ!</textarea>
+                </div>
+                <div class="form-group">
+                <button class="button"> Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
 </main>
+<footer class="footer">
+    <div class="container">
+            <ul class="footer-socials">
+                <li><a href="#!"><img src="/image/Logo/vk.svg" alt="socials"></a></li>
+                <li><a href="#!"><img src="/image/Logo/rutube.svg" alt="socials"></a></li>
+                <li><a href="#!"><img src="/image/Logo/dzen.svg" alt="socials"></a></li>
+                <li><a href="#!"><img src="/image/Logo/telegram.svg" alt="socials"></a></li>
+            </ul>
+        <div class="footer-contact">
+            <address class="footer-contact-col">
+                г. Москва, ул. Тверская, д. 12, стр. 1<br> 
+                Россия, 125009</address>
+            <p class="footer-contact-col">
+                Телефон <a href="tel:+78001234567">+7 (800) 12 34 567</a><br>
+                <a href="mailto:info@bodyshape.ru">info@bodyshape.ru</a></p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
